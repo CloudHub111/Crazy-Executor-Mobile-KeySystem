@@ -85,7 +85,12 @@ Submit.MouseButton1Click:Connect(function()
 Gui:Destroy()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudHub111/Crazy-Executor-V2-Release/main/Open%20Source.Lua"))()
-  
+
+else
+game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = "Crazy Executor Mobile",
+        Text = "Incorrect Key Please Try Again!"
+    })
   end
 end)
 
